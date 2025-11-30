@@ -1,0 +1,146 @@
+.placeorder {
+  display: flex;
+  gap: 50px;
+  margin: 50px 0;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-message {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.success-message {
+  background-color: #51cf66;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.placeorder-left {
+  flex: 1;
+}
+
+.placeorder-left .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.placeorder-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.placeorder-form input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.placeorder-form input:focus {
+  outline: none;
+  border-color: #ff7a59;
+  box-shadow: 0 0 5px rgba(255, 122, 89, 0.2);
+}
+
+.multi-fields {
+  display: flex;
+  gap: 15px;
+}
+
+.multi-fields input {
+  flex: 1;
+}
+
+.placeorder-right {
+  flex: 1;
+}
+
+.cart-total {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.cart-total h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.cart-total-details p {
+  margin: 0;
+  color: #666;
+}
+
+.cart-total hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff7a59;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #ff6a45;
+}
+
+@media (max-width: 768px) {
+  .placeorder {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .multi-fields {
+    flex-direction: column;
+  }
+
+  .multi-fields input {
+    width: 100%;
+  }
+
+  .placeorder-form {
+    gap: 12px;
+  }
+
+  .cart-total {
+    margin-top: 20px;
+  }
+}
